@@ -4,6 +4,7 @@ $amount: 10;
 .highlight {
     background-color: #2C3644;
     color: #A4AEB2;
+    margin: 0;
 }
 .highlight .c {
     color: lighten(#586e75, $amount) !important;
