@@ -8,9 +8,9 @@ tags: jekyll update
 
 I ran into a few snags trying to install Jekyll 3.8.5 on macOS Mojave so I thought I'd document what ended up working in case anyone else is running into the same issues.
 
-### Make sure you have rbenv installed
+### Use rbenv
 
-You'll most likely run into some permission issues if you're using the ruby version Mojave ships with in `/Library/Ruby/Gems/2.3.0/`.
+You might run into some permission issues if you're using the ruby version Mojave ships with in `/Library/Ruby/Gems/2.3.0/`. We want to avoid using sudo, plus rbenv makes it really easy to install and switch between versions of ruby.
 
 **Install rbenv with homebrew**
 
@@ -22,7 +22,13 @@ Install the latestish version of Ruby:
 
 `rbenv global 2.6.1`
 
-**Now we should be good to go, install jekyll!**
+Restart terminal and type `ruby -v`, you should see something like:
+
+{% highlight bash %}
+ruby 2.6.1p33 (2019-01-30 revision 66950)
+{% endhighlight %}
+
+**Now we're ready to install jekyll!**
 
 `bundler exec bundler jekyll`
 
@@ -36,6 +42,6 @@ plugins=(
 )
 {% endhighlight %}
 
- This should automatically get the correct paths into your shell. Otherwise you'll need to be sure and add the path to your .bash_profile/.bashrc/whatever file (i.e. `export PATH="$HOME/.rbenv/bin:$PATH"`).
+ This should automatically get the correct paths into your shell. Otherwise you'll need to be sure and add the path to your .bash_profile/.bashrc/whatever file (i.e. `export PATH="$HOME/.rbenv/bin:$PATH"`), optionally you can add `eval "$(rbenv init -)"` which will add autocomplation ([among other things](https://github.com/rbenv/rbenv#how-rbenv-hooks-into-your-shell)).
 
 [omz]: https://github.com/robbyrussell/oh-my-zsh

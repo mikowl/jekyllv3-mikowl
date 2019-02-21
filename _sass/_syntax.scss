@@ -2,83 +2,83 @@
 $amount: 10;
 
 .highlight {
-    background-color: #2C3644;
-    color: #A4AEB2;
-    margin: 0;
+  background-color: #2C3644;
+  color: #A4AEB2;
+  margin: 0;
 }
 .highlight .c {
-    color: lighten(#586e75, $amount) !important;
-    font-style: italic !important;
+  color: lighten(#586e75, $amount) !important;
+  font-style: italic !important;
 }
 .highlight .cm {
-    color: lighten(#586e75, $amount) !important;
-    font-style: italic !important;
+  color: lighten(#586e75, $amount) !important;
+  font-style: italic !important;
 }
 .highlight .cp {
-    color: lighten(#586e75, $amount) !important;
-    font-style: italic !important;
+  color: lighten(#586e75, $amount) !important;
+  font-style: italic !important;
 }
 .highlight .c1 {
-    color: lighten(#586e75, $amount) !important;
-    font-style: italic !important;
+  color: lighten(#586e75, $amount) !important;
+  font-style: italic !important;
 }
 .highlight .cs {
-    color: lighten(#586e75, $amount) !important;
-    font-style: italic !important;
+  color: lighten(#586e75, $amount) !important;
+  font-style: italic !important;
 }
 .highlight .err {
-    color: lighten(#dc322f, $amount) !important;
-    background: none !important;
+  color: lighten(#dc322f, $amount) !important;
+  background: none !important;
 }
 .highlight .k { color: lighten(#cb4b16, $amount) !important }
 .highlight .o {
-    color: lighten(#93a1a1, $amount) !important;
+  color: lighten(#93a1a1, $amount) !important;
 }
 .highlight .p { color: lighten(#93a1a1, $amount) !important }
 .highlight .ow {
-    color: lighten(#2aa198, $amount) !important;
+  color: lighten(#2aa198, $amount) !important;
 }
 .highlight .gd {
-    color: lighten(#93a1a1, $amount) !important;
-    background-color: #372c34 !important;
-    display: inline-block;
+  color: lighten(#93a1a1, $amount) !important;
+  background-color: #372c34 !important;
+  display: inline-block;
 }
 .highlight .x {
-    color: lighten(#7DBE62, $amount) !important;
-    display: inline-block;
+  color: lighten(#7DBE62, $amount) !important;
+  display: inline-block;
 }
 .highlight .ge {
-    color: lighten(#93a1a1, $amount) !important;
-    font-style: italic !important;
+  color: lighten(#93a1a1, $amount) !important;
+  font-style: italic !important;
 }
 .highlight .gr { color: lighten(#aa0000, $amount) }
 .highlight .gh { color: lighten(#586e75, $amount) !important }
 .highlight .gi {
-    color: lighten(#93a1a1, $amount) !important;
-    background-color: #1a412b !important;
-    display: inline-block;
+  color: lighten(#93a1a1, $amount) !important;
+  background-color: #1a412b !important;
+  display: inline-block;
 }
 .highlight .gi .x {
-    color: lighten(#7DBE62, $amount) !important;
-    background-color: lighten(#355720, $amount) !important;
-    display: inline-block;
+  color: lighten(#7DBE62, $amount) !important;
+  background-color: lighten(#355720, $amount) !important;
+  display: inline-block;
 }
 .highlight .go { color: lighten(#888888, $amount) }
 .highlight .gp { color: lighten(#555555, $amount) }
 .highlight .gs {
-    color: lighten(#93a1a1, $amount) !important;
+  color: lighten(#93a1a1, $amount) !important;
 }
 .highlight .gu { color: lighten(#6c71c4, $amount) !important }
 .highlight .gt { color: lighten(#aa0000, $amount) }
 .highlight .kc {
-    color: lighten(#859900, $amount) !important;
+  color: lighten(#859900, $amount) !important;
 }
 .highlight .kd { color: lighten(#268bd2, $amount) !important }
 .highlight .kp {
-    color: lighten(#cb4b16, $amount) !important;
+  color: lighten(#cb4b16, $amount) !important;
 }
 .highlight .kr {
-    color: lighten(#d33682, $amount) !important;
+  color: lighten(#d33682, $amount) !important;
 }
 .highlight .kt { color: lighten(#2aa198, $amount) !important }
 .highlight .n { color: lighten(#cb4b16, $amount) !important }
@@ -89,14 +89,14 @@ $amount: 10;
 .highlight .ni { color: lighten(#800080, $amount) }
 .highlight .nl { color: lighten(#859900 , $amount)!important }
 .highlight .ne {
-    color: lighten(#268bd2, $amount) !important;
+  color: lighten(#268bd2, $amount) !important;
 }
 .highlight .nf {
-    color: lighten(#268bd2, $amount) !important;
+  color: lighten(#268bd2, $amount) !important;
 }
 .highlight .nn { color: lighten(#b58900, $amount) !important }
 .highlight .nt {
-    color: lighten(#268bd2, $amount) !important;
+  color: lighten(#268bd2, $amount) !important;
 
 }
 .highlight .nx { color: lighten(#C1C18E, $amount) !important }
@@ -128,6 +128,6 @@ $amount: 10;
 .highlight div .gd .x,
 .highlight div .gi,
 .highlight div .gi .x {
-    display: inline-block;
-    width: 100%;
+  display: inline-block;
+  width: 100%;
 }

@@ -14,8 +14,6 @@ $column-width   : 4.4em;
 $gutter-width   : 1.75em;
 $grid-padding   : $gutter-width;
 
-
-
 $show-grid-backgrounds  : false;
 
 $maintext : #444444;
@@ -24,11 +22,9 @@ $secondarycolor : #83D4AA; //seafoamy
 $tertiarycolor : #DE7568; //muted red
 $quaternarycolor : #DEDC96; //lelllow
 
-
 /*****************************************************************************/
 /* Common
 /*****************************************************************************/
-
 
 @media (min-width: 30em) {
   html {
