@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+https://admiring-goldberg-c2d9a0.netlify.com/* https://www.mikowl.com/:splat 301!
