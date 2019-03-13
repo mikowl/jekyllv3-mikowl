@@ -16,7 +16,7 @@
 title: Mikowl
 email: michael@mikowl.com
 description: >- # this means to ignore newlines until "baseurl:"
-  My nerdy little neglected blog, upgraded to jekyll v3.8.5 for the fun.
+  Front end web development stuff by Michael Elias
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.mikowl.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: mikowl

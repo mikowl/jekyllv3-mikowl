@@ -1,0 +1,16 @@
+---
+layout: default
+title: Archive
+permalink: /archive/
+---
+<section class="archives">
+  <h1>Archives</h1>
+
+{% for post in page.posts %}
+<article class="a-post">
+  <time>{{ post.date | date: "%b %-d, %Y" }}</time>
+  <h3></h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+</article>
+{% endfor %}
+
+</section>
