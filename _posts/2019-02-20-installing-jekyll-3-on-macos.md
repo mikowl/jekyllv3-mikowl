@@ -3,22 +3,23 @@ layout: post
 title:  "Install Jekyll 3 on macOS"
 date:   2019-02-20
 tags: jekyll update
+published: false
 ---
 *This is a very rough draft*
 
 I ran into a few snags trying to install Jekyll 3.8.5 on macOS Mojave so I thought I'd document what ended up working in case anyone else is running into the same issues.
 
-### Use rbenv
+### Use a ruby version management tool
 
-You might run into some permission issues if you're using the ruby version Mojave ships with in `/Library/Ruby/Gems/2.3.0/`. We want to avoid using sudo, plus rbenv makes it really easy to install and switch between versions of ruby.
+You might run into some permission issues if you're using the ruby version Mojave ships with in `/Library/Ruby/Gems/2.3.0/`. We want to avoid using sudo whenever possible, I prefer [rbenv](https://github.com/rbenv/rbenv) because it's lightweight, simple, and I've just never had any issues with it. You can easily switch versions of ruby to suite your needs.
 
 **Install rbenv with homebrew**
 
 `brew install rbenv`
 
-Install the latestish version of Ruby:
+Once you have rbenv installed, you can install the latestish version of Ruby:
 
-`rbenv install 2.6.1` (note this can take a while, the first time running this I thought it had froze but I just had to put my patient pants on)
+`rbenv install 2.6.1` (*note: **this can take a while, the first time running this I thought it had froze but I just had to put my patient pants on**)
 
 `rbenv global 2.6.1`
 
