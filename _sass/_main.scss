@@ -3,7 +3,7 @@
 /*****************************************************************************/
 
 //$sans-serif: 'Source Sans Pro', sans-serif;
-$serif: 'PT Serif', serif;
+$serif: 'Lora', serif;
 
 $sans-serif:  'Lato', sans-serif; // 300, 400, 700
 
@@ -16,11 +16,12 @@ $grid-padding   : $gutter-width;
 
 $show-grid-backgrounds  : false;
 
-$maintext : #444444;
-$primarycolor : #344551; //blue
+$maintext : #333d56;
+$primarycolor : #245275; //blue
 $secondarycolor : #83D4AA; //seafoamy
 $tertiarycolor : #DE7568; //muted red
 $quaternarycolor : #DEDC96; //lelllow
+$andthenapurple: #7b4f7a; // a purple
 
 /*****************************************************************************/
 /* Common
@@ -52,13 +53,12 @@ img {
   max-width: 100%;
 }
 
-
 /*****************************************************************************/
 /* Typography
 /*****************************************************************************/
 
 a {
-  color: $tertiarycolor;
+  color: saturate(lighten($primarycolor, 20%), 15%);
   transition: all 0.3s ease-in-out;
 }
 
@@ -67,10 +67,8 @@ p {
 }
 
 strong {
-  background: lighten($quaternarycolor, 10);
-  color:#000;
+  font-weight: 700;
   padding:0 7px;
-  border-radius: 4px;
 }
 
 h1, h2, h3, h4 {
@@ -106,10 +104,10 @@ h1 {
 
 h2 {
   font-size: 1.5em;
-  line-height:1.25em;
-  margin:0 0 0.5em 0;
+  margin: 1em 0 0.5em 0;
   font-weight: 700;
-
+  line-height: 1.2;
+  color: #7b4f7a;
   a {
     color:lighten($primarycolor, 15);
     text-decoration: none;
@@ -122,7 +120,7 @@ h2 {
   }
 
   @media (min-width: 30em) {
-    font-size:2.3em;
+    font-size:2em;
   }
 }
 
@@ -164,11 +162,9 @@ blockquote {
 
 article {
   font-family: $serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   position: relative;
   font-weight: 300;
-  font-size:1.0625em;
+  font-size: 1.125em;
   line-height: 1.7em;
   border-bottom:1px dashed #7FCDA5;
   padding-bottom:0.75em;
@@ -187,8 +183,6 @@ article {
 .share {
   margin-top:2em;
 }
-
-.g-plusone {margin-top:-.25em;}
 
 /*****************************************************************************/
 /* Layout

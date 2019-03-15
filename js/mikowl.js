@@ -1,44 +1,38 @@
----
----
-(function($){
+/* jshint esversion: 6 */
 
-  // Fixed header
-  // $(window).load(function(){
-  //   $('.content').waypoint(function(down) {
-  //     $('.hdr-fixed').toggleClass('active');
-  //   }, { offset: 60 });
-  // });
+document.body.classList.add("js");
 
-  // Navigation
+window.addEventListener('scroll', function () {
+  var fromTopPx = 75,
+    scrolledFromtop = window.pageYOffset,
+    scrollopacity = window.pageYOffset / 2,
+    body = document.body;
+  if (scrolledFromtop > fromTopPx) {
+    body.classList.add('lighten');
+  } else {
+    body.classList.remove('lighten');
+  }
+});
 
-  $('body').addClass('js');
+const mlink = document.querySelector('.navicon'),
+      m = document.getElementById('menu');
 
-  $(window).scroll(function(){
-    var fromTopPx = 75,
-        scrolledFromtop = $(window).scrollTop(),
-        scrollopacity = $(window).scrollTop()/2,
-        $body = $('body');
+mlink.addEventListener("click", function (e) {
+  if (this.classList.contains('active')) {
+    this.classList.remove('active');
+    m.classList.remove('active');
+  } else {
+    this.classList.add('active');
+    m.classList.add('active');
+  }
+  e.preventDefault();
+});
 
-    if(scrolledFromtop > fromTopPx) {
-      $body.addClass('lighten');
-    }
-    else {
-      $body.removeClass('lighten');
-    }
-  });
+// Try to chill out email spam https://gist.github.com/mathiasbynens/286824
 
-  var $menu = $('#menu'), $menulink = $('.navicon');
+const mail = [...document.querySelectorAll('a[href^="mailto:"]')];
 
-  $menulink.on("click", function(){
-    $menulink.toggleClass('active');
-    $menu.toggleClass('active');
-    return false;
-  });
-
-  // Try to chill out email spam https://gist.github.com/mathiasbynens/286824
-
-  $('a[href^="mailto:"]').each(function() {
-    this.href = this.href.replace('(at)', '@').replace(/\(dot\)/g, '.');
-  });
-
-})(jQuery);
+for (var email in mail) {
+  var heaintgonemailyou = mail[email].getAttribute("href").replace('(at)', '@').replace(/\(dot\)/g, '.');
+  mail[email].setAttribute("href", heaintgonemailyou);
+}
