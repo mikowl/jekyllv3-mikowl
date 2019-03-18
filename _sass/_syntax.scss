@@ -2,7 +2,8 @@
 $amount: 10;
 
 .highlight {
-  background-color: #2C3644;
+  background-color: rgba(0,0,0,0.2);
+  box-sizing: border-box;
   color: #A4AEB2;
   margin: 0;
 }

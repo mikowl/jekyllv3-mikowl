@@ -8,9 +8,9 @@ window.addEventListener('scroll', function () {
     scrollopacity = window.pageYOffset / 2,
     body = document.body;
   if (scrolledFromtop > fromTopPx) {
-    body.classList.add('lighten');
+    body.classList.add('darken');
   } else {
-    body.classList.remove('lighten');
+    body.classList.remove('darken');
   }
 });
 
@@ -30,9 +30,9 @@ mlink.addEventListener("click", function (e) {
 
 // Try to chill out email spam https://gist.github.com/mathiasbynens/286824
 
-const mail = [...document.querySelectorAll('a[href^="mailto:"]')];
+const mails = [...document.querySelectorAll('a[href^="mailto:"]')];
 
-for (var email in mail) {
-  var heaintgonemailyou = mail[email].getAttribute("href").replace('(at)', '@').replace(/\(dot\)/g, '.');
-  mail[email].setAttribute("href", heaintgonemailyou);
+for (var email in mails) {
+  var heaintgonemailyou = mails[email].getAttribute("href").replace('(at)', '@').replace(/\(dot\)/g, '.');
+  mails[email].setAttribute("href", heaintgonemailyou);
 }
