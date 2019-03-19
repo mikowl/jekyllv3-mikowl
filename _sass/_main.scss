@@ -27,11 +27,9 @@ $andthenapurple: #ba9bd3; // a purple
 /* Common
 /*****************************************************************************/
 
-@media (min-width: 30em) {
-  html {
-    background: url(../images/treebgdark.jpg) no-repeat center center fixed;
-    background-size: cover;
-  }
+html {
+  background: url(../images/treebgdark.jpg) no-repeat center center fixed;
+  background-size: cover;
 }
 
 body {

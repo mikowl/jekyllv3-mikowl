@@ -4,7 +4,7 @@ title: Oh My Zsh Sparks Joy
 date: 2019-03-13
 comments: true
 tags: zsh
-published: true
+published: false 
 ---
 
 The combination of z.sh for quick and easy directory changes and pretty visuals that let you know what directory and branch you are on is tops. I'm a space cadet so this type of thing makes terminal things much more bearable. Overall my needs are pretty basic so I like to keep things clean and simple. I spent a good chunk of time tinkering to get things the way I wanted them so I thought I'd sort of document the process. If you work in the terminal a lot it's worth taking the time to make it pretty.

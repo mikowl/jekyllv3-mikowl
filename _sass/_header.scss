@@ -68,18 +68,19 @@ a.navicon {
 
 #menu {
   position: absolute;
-  top: -56px;
-  left: -1%;
-  overflow: hidden;
-  max-height: 0;
+  top: 0;
+  left: 0;
   background: rgba(125, 88, 156, 0.9);
   width: 101%;
-  padding: 140px 0 100px 0;
-  transform: rotate(9deg) translateY(-115%);
+  padding: 140px 0 35px 0;
+  transform: rotate(9deg) translateY(-160%);
   transition: all 0.4s ease-in-out;
   z-index: 900;
+  @media (min-width:40em) {
+    padding: 140px 0 35px 0;
+  }
   &.active {
-    transform: rotate(-3deg) translateY(0);
+    transform: rotate(-3deg) translateY(-56px);
   }
   ul {
     margin: 0;
@@ -88,14 +89,18 @@ a.navicon {
     transform: rotate(3deg);
   }
   li {
-    display: inline;
+    display: block;
     color: #FFF;
     text-align: center;
     list-style-type: none;
     font-size: 2em;
-    margin: 0 17px;
+    margin: 0 0 50px 0;
     text-transform: uppercase;
     font-weight: 300;
+    @media (min-width:40em) {
+      display: inline;
+      margin: 0 17px; 
+    }
     &:last-child {
       margin-bottom:0;
     }
